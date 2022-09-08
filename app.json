@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "App-personal",
+    "slug": "App-personal",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
