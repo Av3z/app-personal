@@ -17,7 +17,9 @@ export default function HomeScreen({ navigation }) {
 
     return (
         <View style={tw`bg-slate-200 w-full h-full items-center justify-center`}>
-            <Button name={'Calculadora IMC'} onPress={() => navigation.navigate('IMC')} />
+            <View style={tw`mt-3`}>
+                <Button color={'bg-white'} textColor={'text-slate-500'} width={'w-60'} name={'Calculadora IMC'} onPress={() => navigation.navigate('IMC')} />
+            </View>
             <FabButton text={'+'} />
         </View>
     )
