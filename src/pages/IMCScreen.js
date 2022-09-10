@@ -1,7 +1,6 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import tw from 'twrnc'
-import BackButton from "../components/BackButton";
 
 export default function IMCSCreen({ navigation }) {
 
@@ -12,14 +11,6 @@ export default function IMCSCreen({ navigation }) {
     const calcImc = () => {
         setImc(weight / (height * height));
     }
-
-    useLayoutEffect(() => {
-        navigation.setOptions({
-            headerLeft: () => (
-                <BackButton onPress={() => navigation.navigate('Home')} style={tw`mr-2`} />
-            )
-        })
-    })
 
     return (
         <View style={tw`w-full h-full items-center justify-center bg-slate-100`}>
