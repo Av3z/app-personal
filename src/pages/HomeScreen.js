@@ -23,6 +23,12 @@ export default function HomeScreen({ navigation }) {
             <View style={tw`mt-3`}>
                 <Button color={'bg-white'} textColor={'text-slate-500'} width={'w-60'} name={'Calculadora Peso Osseo'} onPress={() => navigation.navigate('WeightBone')} />
             </View>
+            <View style={tw`mt-3`}>
+                <Button color={'bg-white'} textColor={'text-slate-500'} width={'w-60'} name={'Perimetro do Abdômen'} onPress={() => navigation.navigate('CalcAbdomen')} />
+            </View>
+            <View style={tw`mt-3`}>
+                <Button color={'bg-white'} textColor={'text-slate-500'} width={'w-60'} name={'Calculador IAC'} onPress={() => navigation.navigate('IAC')} />
+            </View>
             <FabButton text={'+'} />
         </View>
     )
