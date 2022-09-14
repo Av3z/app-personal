@@ -1,4 +1,4 @@
-# WEB CHAT REAL TIME
+# APP PERSONAL TRAINER
 
 ## Sobre
 Um web chat com comunicação em tempo real usando algumas tecnologias e frameworks.
@@ -16,7 +16,7 @@ Um web chat com comunicação em tempo real usando algumas tecnologias e framewo
 ### Como usar?
 
 Para começar você irá precisar ter instalado na sua máquina algumas ferramentas:
-[Git](https://git-scm.com), [NodeJS](https://nodejs.org/en/), também precisará de um emulador [Android Studio](https://developer.android.com/studio?hl=pt&gclid=CjwKCAjw1ICZBhAzEiwAFfvFhHLSUJj_5oi2_iujE7QitCc9tE3BjT5DXG-ML2YkUK8BMkz1PWBtWxoCU58QAvD_BwE&gclsrc=aw.ds) e algum editor de código como
+[Git](https://git-scm.com), [NodeJS](https://nodejs.org/en/), também precisará de um emulador no site do android studio você acha mais info. [Android Studio](https://developer.android.com/studio?hl=pt&gclid=CjwKCAjw1ICZBhAzEiwAFfvFhHLSUJj_5oi2_iujE7QitCc9tE3BjT5DXG-ML2YkUK8BMkz1PWBtWxoCU58QAvD_BwE&gclsrc=aw.ds) e algum editor de código como
 [VSCode](https://code.visualstudio.com/)
 
 #### Abra seu git bash e cole o código abaixo:
