@@ -5,9 +5,9 @@ import Button from "../components/Button";
 
 export default function WeightBoneScreen() {
 
-    const [height, setHeight] = useState(0);
-    const [fish, setFish] = useState(0)
-    const [knee, setKnee] = useState(0)
+    const [height, setHeight] = useState();
+    const [fish, setFish] = useState()
+    const [knee, setKnee] = useState()
     const [result, setResult] = useState(0)
 
 
@@ -23,21 +23,21 @@ export default function WeightBoneScreen() {
                 <Text style={tw`italic font-bold text-6 text-green-400`}> Peso Ósseo</Text>
             </View>
             <TextInput
-                style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3`}
+                style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3 font-bold text-slate-400`}
                 placeholder="Altura"
                 keyboardType="numeric"
                 value={height}
                 onChangeText={(text) => setHeight(text / 100)} />
 
             <TextInput
-                style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3`}
+                style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3 font-bold text-slate-400`}
                 placeholder="Diâmetro do Punho"
                 keyboardType="numeric"
                 value={fish}
                 onChangeText={(text) => setFish(text / 100)} />
 
             <TextInput
-                style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3 mb-5`}
+                style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3 mb-5 font-bold text-slate-400`}
                 placeholder="Diâmetro do Joelho"
                 keyboardType="numeric"
                 value={knee}
