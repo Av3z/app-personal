@@ -18,7 +18,7 @@ export default function CalcIAC() {
 
             <View style={tw`flex flex-row`}>
                 <Text style={tw`text-slate-500 font-bold text-7 mb-10`}> Calculadora</Text>
-                <Text style={tw`italic font-bold text-7 text-green-400`}> IAC</Text>
+                <Text style={tw`italic font-bold text-7 text-green-500`}> IAC</Text>
             </View>
 
             <TextInput

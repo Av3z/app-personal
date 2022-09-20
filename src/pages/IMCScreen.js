@@ -16,7 +16,7 @@ export default function IMCSCreen({ navigation }) {
         <View style={tw`w-full h-full items-center justify-center bg-slate-100`}>
             <View style={tw`flex flex-row`}>
                 <Text style={tw`text-slate-500 font-bold text-7 mb-10`}> Calculadora</Text>
-                <Text style={tw`italic font-bold text-7 text-green-400`}> IMC</Text>
+                <Text style={tw`italic font-bold text-7 text-green-500`}> IMC</Text>
             </View>
             <TextInput
                 style={tw`bg-white rounded-md shadow-md p-3 w-75 font-bold text-slate-400 mt-3`}

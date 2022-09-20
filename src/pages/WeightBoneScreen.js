@@ -20,7 +20,7 @@ export default function WeightBoneScreen() {
         <View style={tw`w-full h-full bg-slate-100 items-center justify-center`}>
             <View style={tw`flex flex-row`}>
                 <Text style={tw`text-slate-500 font-bold text-6 mb-10`}>Calculadora</Text>
-                <Text style={tw`italic font-bold text-6 text-green-400`}> Peso Ósseo</Text>
+                <Text style={tw`italic font-bold text-6 text-green-500`}> Peso Ósseo</Text>
             </View>
             <TextInput
                 style={tw`bg-white rounded-md shadow-md p-2 w-60 mt-3 font-bold text-slate-400`}
