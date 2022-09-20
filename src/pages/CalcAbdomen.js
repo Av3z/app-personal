@@ -5,49 +5,30 @@ import Button from '../components/Button';
 
 export default function CalcAbdomen() {
 
-    const [sex, setSex] = useState("");
-    const [abd, setAbd] = useState(0);
+    const [sex, setSex] = useState();
+    const [abd, setAbd] = useState();
     const [result, setResult] = useState("Normal");
 
     const calcAbd = () => {
 
-        const abdResult = ''
+        let abdResult = ''
 
-        if (sex === 'Masc') {
-            console.log('Entrou no if masc')
-            console.log(abd)
-            switch (abd) {
-                case 90:
-                    abdResult = 'Normal';
-                    break;
-                case (abd <= 94):
-                    abdResult = 'Médio';
-                    break;
-                case (abd <= 102):
-                    abdResult = 'Alto';
-                    break;
-                case (abd > 102):
-                    abdResult = 'Altíssimo';
-                    break;
+        if (sex == 'Masc') {
 
-            }
+            if (abd < 90) abdResult = 'Normal';
+            else if (abd <= 94) abdResult = 'Médio';
+            else if (abd <= 102) abdResult = 'Alto';
+            else if (abd > 102) abdResult = 'Altíssimo';
+            else console.log('Erro não consegui identificar o valor')
         }
 
-        if (sex === 'Fem') {
-            switch (abd) {
-                case (abd <= 80):
-                    abdResult = 'Normal';
-                    break;
-                case (abd <= 84):
-                    abdResult = 'Médio';
-                    break;
-                case (abd <= 88):
-                    abdResult = 'Alto';
-                    break;
-                case (abd > 88):
-                    abdResult = 'Altíssimo';
-                    break;
-            }
+        else if (sex == 'Fem') {
+
+            if (abd < 80) abdResult = 'Normal';
+            else if (abd <= 84) abdResult = 'Médio';
+            else if (abd <= 88) abdResult = 'Alto';
+            else if (abd > 88) abdResult = 'Altíssimo';
+            else console.log('Erro não consegui identificar o valor')
         }
 
         setResult(abdResult);
@@ -55,6 +36,8 @@ export default function CalcAbdomen() {
 
     return (
         <View style={tw`w-full h-full items-center justify-center`}>
+            <Text style={tw`text-slate-500 font-bold text-7 mb-2`}>Calculadora</Text>
+            <Text style={tw`italic font-bold text-7 text-green-500 mb-10`}>Perimetro Abdominal</Text>
             <TextInput
                 style={tw`bg-white rounded-md shadow-md p-3 w-75 font-bold text-slate-400 mt-3`}
                 placeholder='Medida do Abdômen'
