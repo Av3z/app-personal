@@ -1,8 +1,8 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useState } from "react";
 import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import tw from 'twrnc'
 
-export default function IMCSCreen({ navigation }) {
+export default function IMCSCreen() {
 
     const [weight, setWeight] = useState(0);
     const [height, setHeight] = useState(0);
