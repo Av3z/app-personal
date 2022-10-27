@@ -52,7 +52,7 @@ export default function IMCSCreen() {
             >
                 <Text style={tw`text-white font-bold`}>Calcular</Text>
             </TouchableOpacity>
-            <Text style={tw`mt-5 `}>IMC: {imc.toFixed(2)}</Text>
+            <Text style={tw`mt-5 font-bold text-slate-500`}>IMC: {imc.toFixed(2)}</Text>
             <Text style={tw`mt-3 font-bold text-slate-500`}>Situação: {result}</Text>
         </View>
     )

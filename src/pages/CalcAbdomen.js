@@ -51,7 +51,7 @@ export default function CalcAbdomen() {
                 onChangeText={(text) => setSex(text)} />
 
             <Button onPress={() => calcAbd()} color={'bg-green-500'} textColor={'text-white'} width={'w-50'} name={"Calcular"} />
-            <Text style={tw`mt-7`}>Situação de risco: {result}</Text>
+            <Text style={tw`mt-7 font-bold text-slate-500`}>Situação de risco: {result}</Text>
         </View>
     )
 }

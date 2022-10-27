@@ -35,7 +35,7 @@ export default function CalcIAC() {
 
             <Button onPress={() => calc()} color={'bg-green-500'} textColor={'text-white'} width={'w-50'} name={"Calcular"} />
 
-            <Text style={tw`mt-7`}>IAC: {iac.toFixed(2)} </Text>
+            <Text style={tw`mt-7 font-bold text-slate-500`}>IAC: {iac.toFixed(2)} </Text>
         </View>
     )
 }

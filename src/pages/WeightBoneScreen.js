@@ -45,7 +45,7 @@ export default function WeightBoneScreen() {
 
             <Button onPress={() => calcWeightBone()} color={'bg-green-500'} textColor={'text-white'} width={'w-50'} name={"Calcular"} />
 
-            <Text style={tw`mt-5`}>Peso Ósseo: {result}</Text>
+            <Text style={tw`mt-5 font-bold text-slate-500`}>Peso Ósseo: {result}</Text>
         </View>
     )
 }
